@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- Menentukan bahwa ini adalah dokumen HTML5 -->
+<html lang="id"> <!-- Menentukan bahasa halaman sebagai Bahasa Indonesia -->
+<head>
+    <meta charset="UTF-8"> <!-- Mendukung berbagai karakter, termasuk huruf khusus -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat halaman responsif di berbagai perangkat -->
+    <title>Produk Unggulan</title> <!-- Menampilkan judul halaman di tab browser -->
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Mengatur jenis huruf */
+            margin: 0; /* Menghapus margin default */
+            padding: 0; /* Menghapus padding default */
+            text-align: center; /* Menengahkan teks secara keseluruhan */
+            color: white; /* Mengatur warna teks menjadi putih */
+            background-color: #333; /* Menambahkan warna latar belakang gelap untuk kontras */
+        }
+        .container {
+            max-width: 1200px; /* Menentukan lebar maksimum konten */
+            margin: auto; /* Membuat konten berada di tengah */
+            padding: 20px; /* Memberikan ruang di sekitar konten */
+        }
+        .hero {
+            background: #000; /* Memberikan warna latar belakang */
+            padding: 50px 20px; /* Menentukan ruang dalam elemen */
+            position: relative; /* Menjadikan posisi relatif untuk elemen anak */
+        }
+        .hero h1, .hero p {
+            color: white; /* Mengubah warna teks dalam hero menjadi putih */
+        }
+        .hero img {
+            width: 80%; /* Memperlebar gambar tanpa memanjang ke bawah */
+            max-height: 500px; /* Meningkatkan tinggi maksimum */
+            object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+            margin-top: 40px; /* Menurunkan posisi gambar */
+        }
+        .btn {
+            display: inline-block; /* Membuat tombol tampil dalam satu baris */
+            padding: 10px 20px; /* Memberikan ruang dalam tombol */
+            background: #007BFF; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            border-radius: 5px; /* Membuat sudut tombol melengkung */
+            margin-top: 20px; /* Memberi jarak antara tombol dan elemen sebelumnya */
+        }
+        .features {
+            display: flex; /* Mengatur tata letak keunggulan produk sejajar */
+            justify-content: space-around; /* Memberikan jarak yang sama antar elemen */
+            margin-top: 40px; /* Menambahkan ruang di atas fitur */
+        }
+        .feature-box {
+            width: 30%; /* Menentukan lebar masing-masing fitur */
+            padding: 20px; /* Memberikan ruang dalam fitur */
+            background: #555; /* Warna latar belakang fitur lebih gelap */
+            border-radius: 10px; /* Membuat sudut fitur membulat */
+        }
+        .feature-box h3, .feature-box p {
+            color: white; /* Mengubah warna teks fitur menjadi putih */
+        }
+        .feature-box img {
+            max-width: 80px; /* Memperkecil gambar fitur */
+            height: auto;
+            margin-bottom: 10px; /* Menambah jarak antara gambar dan teks */
+        }
+    </style>
+    <script>
+        function beliSekarang() {
+            alert("Anda akan diarahkan ke toko kami di Shopee!");
+            window.location.href = "https://shopee.co.id/bang_ruls"; /* Mengarahkan ke toko Sahni Store di Shopee */
+        }
+    </script>
+</head>
+<body>
+    <div class="hero"> <!-- Bagian utama yang menarik perhatian -->
+        <h1>PRODUK TERBAIK UNTUK ANDA !!!</h1> <!-- Judul utama -->
+        <p>TEMUKAN PRODUK KAMI YANG TIDAK ADA DUANYA .</p> <!-- Deskripsi singkat -->
+        <img src="https://i.imgur.com/vDGwxVV.jpeg" alt="Gambar Produk"> <!-- Gambar produk utama dari Imgur -->
+        <br>
+        <a href="#" class="btn" onclick="beliSekarang()">Bawa Saya ke Toko</a> <!-- Tombol aksi untuk pembelian -->
+    </div>
+    <div class="container"> <!-- Bagian utama konten -->
+        <h2>Keunggulan Produk</h2> <!-- Judul keunggulan produk -->
+        <div class="features"> <!-- Bagian fitur yang ditampilkan secara sejajar -->
+            <div class="feature-box"> <!-- Kotak fitur pertama -->
+                <img src="https://i.imgur.com/xSqeHRB.jpeg" alt="Kualitas Premium"> <!-- Gambar fitur dari Imgur -->
+                <h3>PRODUK BERKUALITAS</h3>
+                <p>Walaupun produk yang kami jual second / (trift) kami berusaha untuk memberikan produk yang berkualitas karena sebelum kami jual, kami selalu menyortir terlebih dahulu, agar customer tentunya tidak kecewa dengan produk kami.</p>
+            </div>
+            <div class="feature-box"> <!-- Kotak fitur kedua -->
+                <img src="https://i.imgur.com/zJYx8yg.jpeg" alt="Harga Terjangkau"> <!-- Gambar fitur dari Imgur -->
+                <h3>HARGA TERJANGKAU</h3>
+                <p>Kami berusaha memberikan harga yang terjangkau untuk semua kalangan agar bisa membeli produk di toko kami.</p>
+            </div>
+            <div class="feature-box"> <!-- Kotak fitur ketiga -->
+                <img src="https://i.imgur.com/e85Dsfq.png" alt="Respon Seller Cepat"> <!-- Gambar fitur dari Imgur -->
+                <h3>RESPON SELLER CEPAT</h3>
+                <p>Kami selalu berusaha agar customer selalu puas dengan melakukan pelayanan yang terbaik, salah satunya dengan memberi tanggapan yang cepat terhadap customer.</p>
+            </div>
+        </div>
+        <p class="footer">Dibuat oleh: Atni Hidayah</p>
+    </div>
+</body>
+</html>
